@@ -1,6 +1,128 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+ 
+/* css section */
+nav>section {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: lightpink
+}
+
 /* css logo */
 .logo-icon {
     height: 50px;
     width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-image: url(../Asset/idol.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-container {
+    
+
+}
+
+
+/* css nav item */
+.nav-item {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.banner-container {
+    height: 258px;
     border: 1px solid black;
+}
+
+.idol-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.muse {
+    width: 80px; 
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.aquors {
+    width: 80px; 
+    height: 80px;
+    background-image: url(../Asset/Aquors.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.nijigasaki {
+    width: 80px; 
+    height: 80px;
+    background-image: url(../Asset/nijigasaki1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.liella {
+    width: 80px; 
+    height: 80px;
+    background-image: url(../Asset/liella.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+h5 {
+    text-align: center;
+}
+
+.form-result {
+    height: 100px;
+    border: 1px solid black;
+}
+
+.message-us-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    padding-left: 5px;
+}
+
+.nama {
+    float: left;
+    width: 100px;
+}
+
+.tgl-lahir {
+    float: left;
+    width: 100px;
+}
+
+.jenis-kelamin {
+    float: left;
+    width: 100px;
+}
+
+.pesan {
+    float: left;
+    width: 100px;
+}
+
+.result-container {
+    width: 70%;
 }

@@ -4,22 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diva Portopolio</title>
-    <link rel="stylesheet" type="text" href=".../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav>
-        <!-- div untuk logo -->
-        <div class="logo-icon">
+        <!-- Div untuk logo -->
+       <div class="logo-icon"></div>
 
-        </div>
-
-
-
-
-
-
-
-
+       <!-- section homen fasilities dan message -->
+       <section>
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#idol">Idol</a>
+        <a class="nav-item" href="#message-us">Message us</a>
+       </section>
     </nav>
+
+    
+    <hr>
+
+    <!-- section perwakilan konten besar sedangkan article untuk konten kecil -->
+    <section class="section-container">
+        <!-- Home -->
+        <section id="home">
+            <header>
+                <h1>Hy <span id="name">Diva</span>, Welcome to my website</h1>
+                <script src="../js/script.js"></script>
+            </header>
+
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nisi ipsa assumenda pariatur repellat modi autem veniam illo. Facere rem pariatur alias tempora commodi tempore voluptate vitae a! Maiores, amet?</p>
+
+                <div class="banner-container"></div>
+            </article>
+        <hr>
+            
+        </section>
+        <!-- Our idol -->
+        <section id="idol">
+            <header>
+            <h2>Our Idol</h2>
+            </header>
+            <article class="idol-list">
+            <div>
+                <div class="muse"></div>
+                <h5>Muse</h5>
+            </div>
+
+            <div>
+                <div class="aquors"></div>
+                <h5>Aquors</h5>
+            </div>
+
+            <div>
+                <div class="nijigasaki"></div>
+                <h5>Nijigasaki</h5>
+            </div>
+            
+            <div>
+                <div>
+                    <div class="liella"></div>
+                    <h5>liella</h5>
+                </div>
+            </div>
+
+            </article>
+            
+            <hr>
+
+        </section >
+        <!-- Message Us -->
+        <section id="message-us">
+            <header>
+                <h2>Message us</h2>
+            </header>
+            <section class="message-us-section">
+                <!-- ini form -->
+                <section id="formulir">
+                    <form>
+                    <div class="form-grup">
+                        <label for="nama" class="nama">Nama :</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+                    </div>
+                    <div class="form-grup">
+                        <label for="tgl-lahir" class="tgl-lahir">Tanggal Lahir :</label>
+                        <input type="date" id="tgl-lahir" name="tgl-lahir">
+                    </div>
+                    <div class="form-grup">
+                        <label class="jenis-kelamin">Jenis Kelamin :</label>
+                        <input type="radio" id="laki-laki" name="jeniskelamin" value="laki-laki">
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">
+                        <label for="perempuan">perempuan</label>
+                    </div>
+                    <div class="form-grup">
+                        <label for="pesan" class="pesan">Pesan :</label>
+                        <textarea name="pesan" id="pesan" rows="4"></textarea>
+                    </div>
+                    </form>
+                </section>
+
+                <!-- ini result atau hasil -->
+                <section class="result-container">
+                    <div class="form-result"></div>
+                </section>
+            </section>
+        
+        </section>
+    </section>
+
+
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
