@@ -13,9 +13,11 @@
 
        <!-- section homen fasilities dan message -->
        <section>
-        <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#idol">Idol</a>
-        <a class="nav-item" href="#message-us">Message us</a>
+        <div class="nav-item">
+        <button>Home</button>
+        <button>Idol</button>
+        <button>Message us</button> 
+        </div>
        </section>
     </nav>
 
@@ -28,19 +30,33 @@
         <section id="home">
             <header>
                 <h1>Hy <span id="name">Diva</span>, Welcome to my website</h1>
-                <script src="../js/script.js"></script>
+                
             </header>
 
             <article>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nisi ipsa assumenda pariatur repellat modi autem veniam illo. Facere rem pariatur alias tempora commodi tempore voluptate vitae a! Maiores, amet?</p>
 
-                <div class="banner-container"></div>
+                <div class="banner-container">
+                    <div class="banner-img">
+                        <img src="../Asset/gambar1 .webp">
+                    </div>
+
+                    <div class="banner-img">
+                        <img  src="../Asset/gambar 2.webp">
+                    </div>
+
+                    <div class="banner-img">
+                        <img  src="../Asset/gambar3.webp">
+                    </div>
+                   
+                   
+                </div>
             </article>
         <hr>
             
         </section>
         <!-- Our idol -->
-        <section id="idol">
+        <section class="our-idol" id="idol">
             <header>
             <h2>Our Idol</h2>
             </header>
@@ -72,33 +88,36 @@
             <hr>
 
         </section >
-        <!-- Message Us -->
-        <section id="message-us">
+        <!-- Message Us --> 
+        <section   id="message-us">
             <header>
                 <h2>Message us</h2>
             </header>
             <section class="message-us-section">
                 <!-- ini form -->
                 <section id="formulir">
-                    <form>
+                    <form class="form-pendaftaran" method="post" >
                     <div class="form-grup">
                         <label for="nama" class="nama">Nama :</label>
-                        <input type="text" id="nama" name="nama" placeholder="Nama Anda">
+                        <input type="text" id="nama" name="nama" placeholder="Nama Anda" class="form-control" required>
                     </div>
                     <div class="form-grup">
                         <label for="tgl-lahir" class="tgl-lahir">Tanggal Lahir :</label>
-                        <input type="date" id="tgl-lahir" name="tgl-lahir">
+                        <input type="date" id="tgl-lahir" name="tgl-lahir" class="form-control" required >
                     </div>
                     <div class="form-grup">
                         <label class="jenis-kelamin">Jenis Kelamin :</label>
-                        <input type="radio" id="laki-laki" name="jeniskelamin" value="laki-laki">
+                        <input type="radio" id="laki-laki" name="jeniskelamin" value="laki-laki" required>
                         <label for="laki-laki">Laki-laki</label>
-                        <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">
+                        <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan" required>
                         <label for="perempuan">perempuan</label>
                     </div>
                     <div class="form-grup">
                         <label for="pesan" class="pesan">Pesan :</label>
-                        <textarea name="pesan" id="pesan" rows="4"></textarea>
+                        <textarea name="pesan" id="pesan" rows="4" required></textarea>
+                    </div>
+                    <div class="form-grup">
+                        <button type="button" onclick="nextSlide(1)">submit</button>
                     </div>
                     </form>
                 </section>
@@ -117,5 +136,7 @@
     <footer>
         
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
