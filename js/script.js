@@ -8,31 +8,33 @@ replaceName();
 let namaInput = document.getElementById("nama")
 
 // form validation
-function formvalidation() {
+function formValidation() {
     let namaInput = document.getElementById('nama').value;
     console.log(namaInput);
 }
 
+// form-input
 
-// slide banner
+
 let indexSlide = 1;
 showBanner(1);
 
-function nextSlide (n) {
-    showBanner(indexSlide += n); 
+function nextSlide(n) {
+    showBanner(indexSlide += n);
 }
 
-function showBanner(index) {
+function showBanner(indexBanner) {
     let listImage = document.getElementsByClassName('banner-img');
-    if (index > listImage.length) indexSlide = 1;
+    if (indexBanner > listImage.length) indexSlide = 1;
     
     let index = 0;
     while (index < listImage.length) {
-        listImage.length[index].style.display = 'none';
+        listImage[index].style.display = 'none';
         index++;
     }
 
-    listImage.length[indexSlide - 1].style.display = 'block';
+    listImage[indexSlide - 1].style.display = 'block';
+    console.log('index ' + (indexSlide) + ' Adalah index image yang ditampilkan');
 }
 
-
+setInterval (() => nextSlide(1),  3000); 

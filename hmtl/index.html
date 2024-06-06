@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diva Portopolio</title>
+    <title>Rizki Portopolio</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -28,13 +28,13 @@
     <section class="section-container">
         <!-- Home -->
         <section id="home">
-            <header>
-                <h1>Hy <span id="name">Diva</span>, Welcome to my website</h1>
+            <header class="sub-tittle">
+                <h1>Hy <span id="name">Rizki</span>, Welcome to Love Live franchise</h1>
                 
             </header>
 
             <article>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nisi ipsa assumenda pariatur repellat modi autem veniam illo. Facere rem pariatur alias tempora commodi tempore voluptate vitae a! Maiores, amet?</p>
+                <p>Love Live! School Idol Project is a Japanese multimedia project co-developed by ASCII Media Works' Dengeki G's Magazine, music label Lantis, and animation studio Sunrise. It is the first multimedia project in the Love Live! franchise. The project revolves around a group of nine schoolgirls who become idols in order to save their school from shutting down. It launched in the August 2010 issue of Dengeki G's Magazine, and went on to produce music CDs, anime music videos, two manga adaptations, and video games</p>
 
                 <div class="banner-container">
                     <div class="banner-img">
@@ -49,10 +49,16 @@
                         <img  src="../Asset/gambar3.webp">
                     </div>
                    
+                   <div class="button-banner">
+                    <button type="button" id="prev"  onclick="nextSlide(0)"><</button>
+                    <button type="button" id="next"  onclick="nextSlide(1)">></button>
+                    
+                   </div>
                    
                 </div>
             </article>
-        <hr>
+        
+            <hr>
             
         </section>
         <!-- Our idol -->
@@ -89,52 +95,55 @@
 
         </section >
         <!-- Message Us --> 
-        <section   id="message-us">
-            <header>
-                <h2>Message us</h2>
+        <section>
+            <header class="message-kita">
+                <h2  class="message-us" id="message-us">Message us</h2>
             </header>
             <section class="message-us-section">
+                <p>If you interested, come and join us</p>
                 <!-- ini form -->
                 <section id="formulir">
-                    <form class="form-pendaftaran" method="post" >
-                    <div class="form-grup">
-                        <label for="nama" class="nama">Nama :</label>
-                        <input type="text" id="nama" name="nama" placeholder="Nama Anda" class="form-control" required>
-                    </div>
-                    <div class="form-grup">
-                        <label for="tgl-lahir" class="tgl-lahir">Tanggal Lahir :</label>
-                        <input type="date" id="tgl-lahir" name="tgl-lahir" class="form-control" required >
-                    </div>
-                    <div class="form-grup">
-                        <label class="jenis-kelamin">Jenis Kelamin :</label>
-                        <input type="radio" id="laki-laki" name="jeniskelamin" value="laki-laki" required>
-                        <label for="laki-laki">Laki-laki</label>
-                        <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan" required>
-                        <label for="perempuan">perempuan</label>
-                    </div>
-                    <div class="form-grup">
-                        <label for="pesan" class="pesan">Pesan :</label>
-                        <textarea name="pesan" id="pesan" rows="4" required></textarea>
-                    </div>
-                    <div class="form-grup">
-                        <button type="button" onclick="nextSlide(1)">submit</button>
-                    </div>
+                    <form class="contact-form" id="contact-form" method="post" >
+                        <div class="container">
+                            <h2>Contact Us</h2>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth:</label>
+                                    <input type="date" id="dob" name="dob" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender:</label>
+                                    <div class="radio-group">
+                                        <input type="radio" id="male" name="gender" value="male" required>
+                                        <label for="male">Male</label>
+                                        <input type="radio" id="female" name="gender" value="female" required>
+                                        <label for="female">Female</label>
+                                        <input type="radio" id="other" name="gender" value="other" required>
+                                        <label for="other">Other</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <div class="form-grup">
+                                    <button class="button-send" type="button" onclick="formValidation()">submit</button>
+                                </div>
                     </form>
                 </section>
-
-                <!-- ini result atau hasil -->
-                <section class="result-container">
-                    <div class="form-result"></div>
-                </section>
-            </section>
-        
         </section>
     </section>
 
 
 
     <footer>
-        
+        <div>
+            <p>Created by Rizki</p>
+        </div>
     </footer>
 
     <script src="../js/script.js"></script>

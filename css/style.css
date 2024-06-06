@@ -11,7 +11,8 @@ nav>section {
 }
 
 body {
-    background-color: lightpink
+    background-color: lightpink;
+    margin: 0;
 }
 
 /* css logo */
@@ -25,10 +26,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.section-container {
-    
 
-}
 
 
 /* css nav item */
@@ -36,7 +34,7 @@ body {
     border: solid 1px pink;
     padding: 5px;
     border-radius: 8px;
-    
+    background-image: .../;
 }
 
 
@@ -99,9 +97,46 @@ h5 {
 }
 
 .message-us-section {
-    display: flex;
-    justify-content: space-between;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+
+.form-group > div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
 
 form {
     padding-left: 5px;
@@ -136,7 +171,7 @@ form {
 
 /* ini Banner slide */
 .banner-container{
-    border: 1px solid black;
+    border: 1px solid none;
     height: 500px;
 }
 
@@ -149,6 +184,20 @@ form {
 
 }
 
+.message-kita {
+   
+    height: 78px;
+}
+
+.message-us {
+    display: flex;
+    justify-content: center;
+    background-image: url(../Asset/logo.png);
+    height: 78px;
+      
+}
+
+
 img {
     width: 100%;
     height: 500px;
@@ -156,7 +205,31 @@ img {
   
 }
 
-.navigation {
+.button-banner {
     display: flex;
     justify-content: space-between;
 }
+
+.button-send {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ccc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+footer {
+    color: black;
+    text-align: end;
+    font-size: 12px;
+    background-color: antiquewhite;
+    
+}
+
+.sub-tittle {
+    background-color: antiquewhite;
+}
+
